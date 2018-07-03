@@ -40,7 +40,12 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (8.0.0)
+    autoprefixer-rails (8.3.0)
+      execjs
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.2)
@@ -72,6 +77,8 @@ GEM
     guard-minitest (2.4.4)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    heroku-deflater (0.6.3)
+      rack (>= 1.4.5)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -108,7 +115,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pg (0.18.4)
+    pg (0.20.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -137,6 +144,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.4)
       actionpack (= 5.1.4)
       activesupport (= 5.1.4)
@@ -197,18 +209,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (= 3.3.7)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
+  heroku-deflater
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)
   minitest-reporters (= 1.1.14)
-  pg (= 0.18.4)
+  pg (= 0.20.0)
   puma (= 3.9.1)
   rails (= 5.1.4)
   rails-controller-testing (= 1.0.2)
+  rails_12factor
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
@@ -219,4 +234,4 @@ DEPENDENCIES
   web-console (= 3.5.1)
 
 BUNDLED WITH
-   1.16.1
+   1.16.2

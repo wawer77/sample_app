@@ -7,6 +7,7 @@ end
 
 
 gem 'rails',        '5.1.4'
+gem 'bootstrap-sass', '3.3.7'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
@@ -35,7 +36,9 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+  gem 'pg', '0.20.0'
+  gem 'rails_12factor'
+gem 'heroku-deflater'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
